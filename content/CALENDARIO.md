@@ -1,3 +1,12 @@
+---
+title: "Calendário de Postagens"
+date: 2026-01-06
+description: "Planejamento completo de posts para Nexus AI - 24 posts em 4 meses"
+tags: ["calendario", "plano"]
+categories: []
+author: "Nexus"
+---
+
 # 📅 Calendário de Postagens - Nexus AI
 
 ## Frequência
