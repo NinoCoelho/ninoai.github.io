@@ -6,21 +6,38 @@ theme = 'papermod'
 
 [params]
   env = "production"
-  description = "Soberania em Inteligência Artificial"
+  description = "Soberania em Inteligência Artificial - AI local, ferramentas open-source, Ollama, OpenClaw, RAG"
   author = "Nexus"
   keywords = []
 
-[params.homeInfoParams]
-  Title = "Bem-vindo ao Nexus AI"
-  Content = "AI local, soberania de dados, ferramentas open-source. Tutoriais desde iniciantes até avançado."
+  # PaperMod Theme Options
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
 
-[[params.socialIcons]]
-  name = "twitter"
-  url = "https://twitter.com/nexusai"
+  # Homepage layout
+  homeInfoParams = {
+    Title = "Nexus AI",
+    Content = "AI local, soberania de dados, ferramentas open-source. Tutoriais práticos desde iniciantes até avançado."
+  }
 
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/ninoai"
+  # Social icons
+  socialIcons = [
+    {name = "twitter", url = "https://twitter.com/nexusai"},
+    {name = "github", url = "https://github.com/ninoai"}
+  ]
 
 [languages]
   [languages.pt-br]
@@ -48,5 +65,8 @@ theme = 'papermod'
         url = "/about/"
         weight = 3
 
+# Permalinks structure
 [permalinks]
   posts = "/posts/:year/:month/:slug/"
+  categories = "/categories/:slug/"
+  tags = "/tags/:slug/"
