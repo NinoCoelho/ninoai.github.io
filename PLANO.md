@@ -369,6 +369,19 @@ tweets/
 - Métricas de sucesso definidas
 - Estrutura de pastas documentada
 - TEMPLATE.md criado com regras de estilo
+- **CALENDARIO.md criado: 24 posts agendados (4 meses, 2x/semana)**
+- **Posts antigos apagados do site** (limpeza de conteúdo sales copy)
+
+---
+
+## Calendário de Postagens
+
+**Ver arquivo completo:** `CALENDARIO.md`
+
+- **Frequência**: 2x/semana (terça/quinta)
+- **Total planejado**: 24 posts (4 meses)
+- **Estatísticas**: 72.000-120.000 palavras, 72 tweets
+- **Categorias**: Fundamentos, Ferramentas Locais, Avançado, DevOps, Multi-Agentes
 
 ---
 
