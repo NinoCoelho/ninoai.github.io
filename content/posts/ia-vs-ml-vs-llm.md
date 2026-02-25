@@ -1,7 +1,7 @@
 ---
 title: "IA vs ML vs LLM: Guia Completo"
 date: 2026-01-13
-draft: true
+draft: false
 description: "IA, Machine Learning e LLMs são termos diferentes. Entenda a hierarquia, quando usar cada termo e exemplos práticos de arquitetura."
 tags: ["fundamentos", "introdução", "terminologia"]
 categories: ["fundamentos"]
