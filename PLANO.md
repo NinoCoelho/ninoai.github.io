@@ -12,11 +12,11 @@
 
 ### Semana 1: AI vs ML vs LLM
 - [x] Post Draft criado: "IA vs ML vs LLM - Entenda a Diferença em 10 Minutos"
-- [ ] Tweet 1: O que é IA?
-- [ ] Tweet 2: Diferença IA vs ML
-- [ ] Tweet 3: O que é LLM
-- [ ] Imagens para post (diagramas, exemplos)
+- [x] Imagens geradas (3): hierarchy, cloud-vs-local, demo
+- [x] Tweets criados (3): O que é IA, IA vs ML, O que é LLM
 - [ ] Aprovação de post por Nino
+- [ ] Aprovação de tweets por Nino
+- [ ] Mover post para [A] aprovar
 - [ ] Mover para [P] publicado
 
 ### Semana 2: Markdown para AI

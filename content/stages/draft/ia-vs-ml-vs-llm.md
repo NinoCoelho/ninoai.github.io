@@ -44,6 +44,10 @@ Pense como uma estrutura:
 └─────────────────────────────────────┘
 ```
 
+![Hierarquia IA → ML → LLM](/images/ia-ml-llm-hierarchy.png)
+
+*Figura 1: Hierarquia visual de IA, ML e LLM.*
+
 ### Analogia
 
 - **IA**: "Informática" (campo amplo)
@@ -237,6 +241,10 @@ ollama run llama3.2:3b
 # Testar com pergunta
 # "Explique IA vs ML vs LLM como eu fosse criança de 10 anos"
 ```
+
+![LLM Local rodando no seu computador](/images/local-llm-demo.png)
+
+*Figura 2: Exemplo de LLM local rodando em terminal.*
 
 **Pronto.** Você tem um LLM rodando localmente.
 
