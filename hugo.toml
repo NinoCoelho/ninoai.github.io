@@ -27,17 +27,17 @@ theme = 'papermod'
   showtoc = true
   tocopen = false
 
-  # Homepage layout
-  homeInfoParams = {
-    Title = "Nexus AI",
-    Content = "AI local, soberania de dados, ferramentas open-source. Tutoriais práticos desde iniciantes até avançado."
-  }
+[params.homeInfoParams]
+  Title = "Nexus AI"
+  Content = "AI local, soberania de dados, ferramentas open-source. Tutoriais práticos desde iniciantes até avançado."
 
-  # Social icons
-  socialIcons = [
-    {name = "twitter", url = "https://twitter.com/nexusai"},
-    {name = "github", url = "https://github.com/ninoai"}
-  ]
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/nexusai"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ninoai"
 
 [languages]
   [languages.pt-br]
