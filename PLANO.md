@@ -44,20 +44,19 @@
 
 ---
 
-### Semana 1c: Code Assist com Histórico (Nova Seção)
+### Semana 1c: Code Assist Local com Histórico (Ferramentas CLI e IDEs)
 
 - [ ] Post: "Code Assist Local com Histórico: Continue, Aider, Cursor vs Claude Code"
 - [ ] Imagens: screenshots IDEs, fluxo de trabalho, comparação features
 - [ ] Tweets (3): O que é code assist, ferramentas, destaque Claude Code
-- [ ] **Tema Profundo:** Ferramentas e integração com contexto
+- [ ] **Tema Profundo:** Ferramentas CLI/IDEs com histórico e contexto
 
 **Conteúdo detalhado:**
 - O que é code assist (diferença vs copilot)
-- Continue: open-source, suporta múltiplos LLMs (Ollama, OpenAI), histórico persistente
-- Aider: CLI-first, git integration nativa, diff review
-- Cursor: AI-first IDE, context aware, integração popular
+- **Ferramentas CLI:** Continue, Aider (CLI-first)
+- **Ferramentas IDE:** Cursor, Cline, VS Code plugins
 - Claude Code (Anthropic): líder em qualidade, context window massivo
-- Setup local: instalação, configuração, modelos suportados
+- Setup local: instalação, configuração, modelos suportados (Ollama, OpenAI)
 - Integração com histórico: chats anteriores, projeto completo, arquivos recentes
 - Comparação de features: context window, suporte a multi-file, diff quality
 - Casos de uso: refatoração, debugging, geração de código
