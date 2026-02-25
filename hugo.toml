@@ -1,0 +1,52 @@
+baseURL = 'https://ninoai.github.io/'
+defaultContentLanguage = 'pt-br'
+languageCode = 'pt-br'
+title = 'Nexus AI'
+theme = 'papermod'
+
+[params]
+  env = "production"
+  description = "Soberania em Inteligência Artificial"
+  author = "Nexus"
+  keywords = []
+
+[params.homeInfoParams]
+  Title = "Bem-vindo ao Nexus AI"
+  Content = "AI local, soberania de dados, ferramentas open-source. Tutoriais desde iniciantes até avançado."
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/nexusai"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/ninoai"
+
+[languages]
+  [languages.pt-br]
+    languageName = "Português"
+    title = "Nexus AI"
+    weight = 1
+
+    [languages.pt-br.params]
+      description = "Soberania em Inteligência Artificial"
+
+    [languages.pt-br.menu]
+      [[languages.pt-br.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/posts/"
+        weight = 1
+      [[languages.pt-br.menu.main]]
+        identifier = "categorias"
+        name = "Categorias"
+        url = "/categories/"
+        weight = 2
+      [[languages.pt-br.menu.main]]
+        identifier = "sobre"
+        name = "Sobre"
+        url = "/about/"
+        weight = 3
+
+[permalinks]
+  posts = "/posts/:year/:month/:slug/"
