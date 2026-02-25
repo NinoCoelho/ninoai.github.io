@@ -12,7 +12,7 @@
 
 ### Semana 1: IA vs ML vs LLM ✅ CONCLUÍDO
 
-- [x] Post Draft criado: "IA vs ML vs LLM: Guia Completo"
+- [x] Post Draft criado: "IA vs ML vs LLM - Guia Completo"
 - [x] Imagens geradas (3): hierarchy, cloud-vs-local, demo
 - [x] Tweets criados (3): IA, IA vs ML, O que é LLM
 - [x] Template.md criado com regras de estilo
@@ -21,6 +21,51 @@
 - [ ] Postar tweets via xurl
 
 **Tema Focado:** Terminologia e hierarquia (superficial mas necessário)
+
+---
+
+### Semana 1b: Cloud vs Local AI (Novo Post Separado)
+
+- [ ] Post: "Cloud vs Local AI: Trade-Offs Completos e Quando Usar Cada Um"
+- [ ] Imagens: comparação arquitetura, custo, privacidade
+- [ ] Tweets (3): Arquitetura, trade-offs, quando usar
+- [ ] **Tema Profundo:** Análise comparativa de custos/risco
+
+**Conteúdo detalhado:**
+- Arquitetura técnica: onde dados são armazenados
+- Custo realista: hardware vs API (TCO 3 anos)
+- Segurança: ataque vetorial, modelo poisoning
+- Compliance: GDPR, LGPD, HIPAA (quando usar cada)
+- Performance: latência, throughput, context window
+- Híbrido: cloud para treinamento, local para inferência
+- Casos de uso: empresarial, pessoal, sensível
+- Tabela decisão: quando usar cloud vs local
+- Exemplo real: migrar startup de GPT-4 para Llama 3.1
+
+---
+
+### Semana 1c: Code Assist com Histórico (Nova Seção)
+
+- [ ] Post: "Code Assist Local com Histórico: Continue, Aider, Cursor vs Claude Code"
+- [ ] Imagens: screenshots IDEs, fluxo de trabalho, comparação features
+- [ ] Tweets (3): O que é code assist, ferramentas, destaque Claude Code
+- [ ] **Tema Profundo:** Ferramentas e integração com contexto
+
+**Conteúdo detalhado:**
+- O que é code assist (diferença vs copilot)
+- Continue: open-source, suporta múltiplos LLMs (Ollama, OpenAI), histórico persistente
+- Aider: CLI-first, git integration nativa, diff review
+- Cursor: AI-first IDE, context aware, integração popular
+- Claude Code (Anthropic): líder em qualidade, context window massivo
+- Setup local: instalação, configuração, modelos suportados
+- Integração com histórico: chats anteriores, projeto completo, arquivos recentes
+- Comparação de features: context window, suporte a multi-file, diff quality
+- Casos de uso: refatoração, debugging, geração de código
+- Benchmarks de qualidade: HumanEval, MBPP, code quality
+- Custo: grátis local vs Claude Code pago
+- Quando usar cada ferramenta: por projeto, por tipo de código, por team size
+
+---
 
 ### Semana 2: Markdown > DOCX
 
@@ -38,6 +83,8 @@
 - Integração com LLMs (prompt = MD file)
 - Comparação: DOCX (binário, lento) vs MD (texto, rápido)
 - Workflow real: editar MD → preview instantâneo → commit
+
+---
 
 ### Semana 3: Backups de Chats
 
@@ -57,6 +104,8 @@
 - Caso real: migrar anos de conversas para RAG local
 - Benefícios: busca semântica em toda sua história
 
+---
+
 ### Semana 4: Mitos Desmascarados
 
 - [ ] Post: "20 Mitos sobre IA Local: Verdades e Mentiras"
@@ -66,7 +115,7 @@
 
 **Conteúdo detalhado:**
 - Mito 1: "AI é perigosa e incontrolável" → Verdade: Controle é maior em local
-- Mito 2: "AI vai roubar empregos" → Verdade: IA como ferramenta, não substituto
+- Mito 2: "AI vai roubar empregos" → Verdade: AI como ferramenta, não substituto
 - Mito 3: "AI local é lenta e fraca" → Verdade: Llama 3.2 compete com GPT-4
 - Mito 4: "Precisa de supercomputador" → Verdade: MacBook Pro 2020 roda Llama 3.2
 - Mito 5: "Modelos open-source são inferiores" → Verdade: Mistral, Gemma superam GPT-3.5
@@ -79,30 +128,41 @@
 
 ## Mês 2: Ferramentas Locais Básicas
 
-### Semana 5: Ollama Setup Completo
+### Semana 5: Ollama + Ferramentas Locais Completo
 
-- [ ] Post: "Ollama Completo: Instalação, Modelos e Performance em 15 Minutos"
-- [ ] Imagens: setup passo a passo, benchmark hardware, escolha de modelo
-- [ ] Tweets (3): Instalação, modelos, performance
-- [ ] **Tema Profundo:** Arquitetura técnica e otimização
+- [ ] Post: "Ollama + Ecosistema: Chat Local, RAG e Code Assist"
+- [ ] Imagens: diagrama ecosistema, setup interfaces, fluxo RAG
+- [ ] Tweets (3): Ollama install, ferramentas de chat, setup completo
+- [ ] **Tema Profundo:** Ecosistema completo de AI local
 
 **Conteúdo detalhado:**
 - Instalação Mac/Linux/Windows (curl, brew, winget)
-- Arquitetura: quantização, GGUF, CPU vs GPU vs MPS (Apple Silicon)
-- Modelos disponíveis: Llama 3.1, 3.2, Mixtral, Qwen, Gemma
-- Tamanhos e requisitos hardware: 1B, 3B, 7B, 8B, 70B
-- Quantização: Q4, Q5, Q8 trade-offs (memória vs precisão)
-- Performance benchmarks: M1/M2/M3, RTX 3060/4090, Mac Intel
-- Context window: 4k, 8k, 32k, 128k (quando usar)
-- Comando avançados: `ollama show`, `ollama run --num-gpu`, `--temperature`
-- Casos de uso real: coding, chat, análise de documentos
-- Troubleshooting comum: OOM, slow inference, temperatura alta
+- Arquitetura Ollama: quantização, GGUF, CPU vs GPU vs MPS
+- **Ferramentas de Chat Locais:**
+  - Open WebUI: interface tipo ChatGPT, suporte a múltiplos modelos
+  - text-generation-webui: opções avançadas, extensões
+  - Ollama Python/Go API: integração com seus scripts
+- **RAG Local:**
+  - Vector databases: ChromaDB (simples), Qdrant (escalável), Weaviate (feature-rich)
+  - Chunking strategies: fixed-size, semantic, recursive splitting
+  - Código Python para setup RAG básico com LangChain
+  - Hybrid search: vector + keyword (BM25)
+- **Modelos e Performance:**
+  - Llama 3.1, 3.2, Mixtral, Qwen, Gemma
+  - Tamanhos: 1B, 3B, 7B, 8B, 70B
+  - Quantização: Q4, Q5, Q8 trade-offs (memória vs precisão)
+  - Context window: 4k, 8k, 32k, 128k (quando usar)
+- **Comandos avançados:** `ollama show`, `ollama run --num-gpu`, `--temperature`
+- **Casos de uso real:** coding, chat, análise de documentos
+- **Troubleshooting comum:** OOM, slow inference, temperatura alta
+
+---
 
 ### Semana 6: Open WebUI
 
-- [ ] Post: "Open WebUI: Interface ChatGPT Local com Todas Features"
-- [ ] Imagens: screenshots, UI features, configurações
-- [ ] Tweets (3): Setup, RAG integration, customização
+- [ ] Post: "Open WebUI: Interface ChatGPT Local com RAG e Plugins"
+- [ ] Imagens: screenshots, UI features, RAG workflow
+- [ ] Tweets (3): Setup, upload documentos, plugins
 - [ ] **Tema Profundo:** RAG local e personalização
 
 **Conteúdo detalhado:**
@@ -115,6 +175,8 @@
 - Performance: GPU acceleration, quantization, caching
 - Casos de uso: equipe, pessoal, servidor
 - Comparação vs ChatGPT UI
+
+---
 
 ### Semana 7: MacWhisper
 
@@ -129,11 +191,13 @@
 - Benchmark: WER (Word Error Rate) vs OpenAI Whisper
 - Batch processing: múltiplos arquivos automaticamente
 - Formatos: MP3, WAV, M4A, MKV
-- Integração DaVinci Resolve (subtitles automáticos)
+- Integração DaVinci Resolve (subtítulos automáticos)
 - Timestamps e segmentação
 - Idiomas suportados e multilíngue
 - Scripts Python para automação de pipeline
 - Casos reais: podcasts, reuniões, vídeos
+
+---
 
 ### Semana 8: Soberania de Dados Básica
 
@@ -176,6 +240,8 @@
 - RAG evaluation: RAGAS, faithfulness metrics
 - Casos reais: documentos técnicos, chat history, código
 
+---
+
 ### Semana 10: Automação Diária
 
 - [ ] Post: "Automação Diária: Whisper + Ollama → Resumos Automáticos"
@@ -193,6 +259,10 @@
 - Versionamento: Git LFS para áudios, DVC para modelos
 - Casos reais: reuniões, podcasts, voz mental
 - Troubleshooting: silêncio, qualidade baixa, timestamps
+
+---
+
+## Mês 4+: OpenClaw e Multi-Agentes
 
 ### Semana 11: OpenClaw Setup VPS
 
@@ -212,8 +282,10 @@
 - Monitoring: Uptime Robot, custom health checks
 - Backup do VPS: snapshots, rsync, restic
 - Escalabilidade: múltiplos agentes, load balancing
-- Casos reais: alerts automáticos, automações de negócio
+- Casos reais: alertas automáticos, automações de negócio
 - Custo: orçamento mensal realista
+
+---
 
 ### Semana 12: Multi-Agentes
 
@@ -242,7 +314,7 @@
 **Semana Atual**: 1
 **Progresso**: 1/12 semanas (8%)
 
-**Próxima Data-Alvo**: Semana 2 post (2026-01-20 terça)
+**Próxima Data-Alvo**: Semana 1b post (Cloud vs Local)
 
 ---
 
@@ -258,7 +330,7 @@
 - [ ] CTA específico (próximo artigo definido)
 
 ### Por Mês
-- [ ] 4 posts publicados (1/sem)
+- [ ] 4 posts publicados (1/semana)
 - [ ] 12 tweets gerados (3/post)
 - [ ] 4-8 imagens criadas
 - [ ] Feedback recebido do público
@@ -291,9 +363,33 @@ tweets/
 
 **Data**: 2026-01-06
 **Alterações**:
-- Revisão completa do PLANO com temas mais profundos
+- Revisão completa do PLANO com temas profundos por semana
+- Adicionadas Semanas 1b, 1c (Cloud vs Local, Code Assist)
 - Cada semana agora tem "Tema Profundo" específico
 - Detalhamento do conteúdo técnico em cada post
 - Métricas de sucesso definidas
 - Estrutura de pastas documentada
 - TEMPLATE.md criado com regras de estilo
+
+---
+
+## Notas Importantes
+
+### Foco Didático
+- Ensinar, não vender
+- Exemplos antes da teoria
+- Transições naturais entre seções
+- Um tema por post (não misturar conceitos)
+
+### Profundidade Técnica
+- Cada post tem "Tema Profundo" específico
+- Conteúdo detalhado: arquiteturas, implementações, benchmarks
+- Casos reais de uso
+- Código funcional e testado
+- Troubleshooting comum
+
+### Qualidade Visual
+- Imagens geradas com Nano Banana Pro
+- Diagramas técnicos (hierarquia, arquitetura, fluxo)
+- Screenshots reais quando aplicável
+- Legenda explicativa (não redundante com texto)
