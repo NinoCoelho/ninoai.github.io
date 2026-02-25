@@ -27,6 +27,9 @@ theme = 'papermod'
   showtoc = true
   tocopen = false
 
+  # Custom CSS
+  customCSS = ["css/custom.css"]
+
 [params.homeInfoParams]
   Title = "Nexus AI"
   Content = "AI local, soberania de dados, ferramentas open-source. Tutoriais práticos desde iniciantes até avançado."
